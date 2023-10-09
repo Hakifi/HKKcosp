@@ -11,7 +11,13 @@ Hkkcosp is a cosplay renting app developed by a team of talented individuals:
 Hkkcosp allows users to rent anime costumes for their cosplay needs. Whether you're attending a convention, hosting a themed party, or just want to channel your inner anime character, Hkkcosp has got you covered.
 
 ## Screenshots
+### Dark Mode
 
+![Dark Mode Screenshot](screenshots/dark.jpeg)
+
+### Light Mode
+
+![Light Mode Screenshot](screenshots/light.jpeg)
 
 ## Cost Estimation
 
