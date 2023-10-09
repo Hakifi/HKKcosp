@@ -9,6 +9,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
+
 public class MainActivity extends AppCompatActivity {
     EditText id, quantity;
     Button hitungDanSewa;
@@ -41,26 +44,29 @@ public class MainActivity extends AppCompatActivity {
     private void hitung(EditText id, EditText quantity, TextView price) {
         int idQ = Integer.parseInt(id.getText().toString());
         int quantityQ = Integer.parseInt(quantity.getText().toString());
-
+        DecimalFormatSymbols symbols = new DecimalFormatSymbols();
+        symbols.setGroupingSeparator('.');
+        symbols.setDecimalSeparator(',');
+        DecimalFormat decimalFormat = new DecimalFormat("#,###.###", symbols);
         switch (idQ) {
             case 1:
                 int total1 = quantityQ * 100000;
-                price.setText("Rp. " + total1);
+                price.setText("Rp. " + decimalFormat.format(total1));
                 Toast.makeText(this, "Berhasil menyewa Xiao", Toast.LENGTH_SHORT).show();
                 break;
             case 2:
                 int total2 = quantityQ * 125000;
-                price.setText("Rp. " + total2);
+                price.setText("Rp. " + decimalFormat.format(total2));
                 Toast.makeText(this, "Berhasil menyewa Wanderer", Toast.LENGTH_SHORT).show();
                 break;
             case 3:
                 int total3 = quantityQ * 95000;
-                price.setText("Rp. " + total3);
+                price.setText("Rp. " + decimalFormat.format(total3));
                 Toast.makeText(this, "Berhasil menyewa Kazuha", Toast.LENGTH_SHORT).show();
                 break;
             case 4:
                 int total4 = quantityQ * 185000;
-                price.setText("Rp. " + total4);
+                price.setText("Rp. " + decimalFormat.format(total4));
                 Toast.makeText(this, "Berhasil menyewa Furina/Focalors", Toast.LENGTH_SHORT).show();
                 break;
             default:
