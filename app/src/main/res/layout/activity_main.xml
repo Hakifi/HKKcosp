@@ -78,12 +78,12 @@
 
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView"
-        android:layout_width="411dp"
+        android:layout_width="match_parent"
         android:layout_height="260dp"
-        android:layout_marginTop="20dp"
         android:scrollbars="none"
         app:layout_constraintBottom_toTopOf="@+id/id"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -113,9 +113,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
+                    android:textColor = "?android:textColorPrimary"
                     android:fontFamily="@font/poppins_black"
                     android:text="Xiao"
-                    android:textColor="@color/black"
                     android:textSize="16sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/imageView1" />
@@ -157,6 +157,7 @@
                     app:srcCompat="@drawable/wanderer" />
 
                 <TextView
+                    android:textColor = "?android:textColorPrimary"
                     android:id="@+id/textView2_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -164,7 +165,6 @@
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/poppins_black"
                     android:text="Wanderer"
-                    android:textColor="@color/black"
                     android:textSize="16sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/imageView2" />
@@ -206,6 +206,7 @@
                     app:srcCompat="@drawable/kazuha" />
 
                 <TextView
+                    android:textColor = "?android:textColorPrimary"
                     android:id="@+id/textView2_3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -213,7 +214,6 @@
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/poppins_black"
                     android:text="Kazuha"
-                    android:textColor="@color/black"
                     android:textSize="16sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/imageView3" />
@@ -255,6 +255,7 @@
                     app:srcCompat="@drawable/furina" />
 
                 <TextView
+                    android:textColor = "?android:textColorPrimary"
                     android:id="@+id/textView2_4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -262,7 +263,6 @@
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/poppins_black"
                     android:text="Furina/Focalors"
-                    android:textColor="@color/black"
                     android:textSize="16sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/imageView4" />
